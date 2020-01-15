@@ -16,10 +16,9 @@ spacecraft = [
    ("Cassini", "Saturn"),
    ("Viking", "Mars"),
    ("Viking", "Earth")
-
 ]
 # Iterate over your list of planets, and inside that loop, iterate over the list of tuples. Print, for each planet, which satellites have visited it.
 for planet in planet_list:
     for a, b in spacecraft:
         if planet == b:
-            print ("First", a, "then", b)
+            print (f"{planet}: {a}")
